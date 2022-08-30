@@ -1,0 +1,19 @@
+test_datasets: ['svhn', 'usps','mnistm', 'mnist']
+train_datasets: ['mnist'] 
+im_size: 28
+
+net1: 'a'
+batch_size: 128
+num_classes: 10
+epochs: 100
+lr: 0.01 
+loss: 'categorical_crossentropy'
+optimizer: 'sgd' 
+with_masks: False
+handwritten_masks: False
+
+pseudo_siamese: False
+siamese: False
+
+
+outdir: './outputs/baseline/without_masks/'

@@ -1,0 +1,20 @@
+test_datasets: ['mnist-r45']
+train_datasets: ['mnist','mnist-r15','mnist-r30', 'mnist-r60','mnist-r75']
+im_size: 16
+
+
+net1: 'lenet5'
+batch_size: 128
+num_classes: 10
+epochs: 1000
+lr: 0.001 
+loss: 'contrastive_loss'
+optimizer: 'sgd' 
+with_masks: False
+handwritten_masks: False
+
+pseudo_siamese: False
+siamese: True
+
+
+outdir: './outputs/siamese/not_handwritten/'

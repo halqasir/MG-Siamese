@@ -1,0 +1,19 @@
+test_datasets: ['svhn', 'usps','mnistm', 'mnist']
+train_datasets: ['mnistm'] 
+im_size: 32
+
+net1: 'cnn2'
+batch_size: 64
+num_classes: 10
+epochs: 1000
+lr: 0.01 
+loss: 'contrastive_loss' 
+optimizer: 'sgd' 
+with_masks: False
+handwritten_masks: True
+
+pseudo_siamese: False
+siamese: True
+
+
+outdir: './outputs/siamese/handwritten/'

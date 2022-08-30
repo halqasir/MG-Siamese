@@ -1,0 +1,19 @@
+test_datasets: ['mnist-r15']
+train_datasets: ['mnist','mnist-r30','mnist-r45', 'mnist-r60','mnist-r75']
+im_size: 28
+
+net1: 'vada'
+batch_size: 128
+num_classes: 10
+epochs: 1000
+lr: 0.001 
+loss: 'contrastive_loss'
+optimizer: 'sgd' 
+with_masks: False
+handwritten_masks: True
+
+pseudo_siamese: False
+siamese: True
+
+
+outdir: './outputs/siamese/handwritten/'
